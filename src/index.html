@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+        .bar-nav{
+        color: #4070f4;
+      }
+  
+      body {
+        background: white;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+      .main{
+        z-index: 100; /* Higher z-index for the navbar */
+      }
+      .swiper {
+        z-index: 0; /* Lower z-index for the Swiper container */
+        width: 100%;
+        height: 70vh;
+      }
+      img{
+        object-fit: contain;
+      }
+      .pacifico-regular {
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+      }
+      .dropdown-menu {
+       position: absolute;
+       top: -100%;
+       left: 0;
+       background-color: white;
+       width: 100%;
+    /* Other styles... */
+      }
+      .contact-top{
+        background-color: #192733;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 0px;
+      }
+      
+
+    </style>
+
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+    <!-- navbar -->
+    <div class="main">
+      <nav class="flex justify-between items-center px-12 h-16 md:gap-8">
+        <a href="#" class="text-2xl font-bold md:hidden"><img class="h-16 w-28" src="logo.jpg" alt=""></a>
+        <div class="dropdown-menu absolute bg-white w-full flex flex-col gap-6 items-center py-2 text-lg font-bold md:static md:bg-white md:flex-row md:justify-between" style="z-index: 100;">
+          <a href="#" class="text-2xl  pacifico-regular">Design Factory .</a>
+          <ul class = "flex flex-col items-center gap-[4vw] md:flex-row md:gap-6  ">
+            <li class="hover:text-orange-200 text-orange-400">Home</li>
+            <li class="hover:text-orange-400">Projects</li>
+            <li class="hover:text-orange-400">Hiring</li>
+            <a href ="https://kunal112299.github.io/dfg-aboutus/"><li class="hover:text-orange-400 whitespace-nowrap"> About us </li></a>
+            <li class="hover:text-orange-400 whitespace-nowrap">Contact us</li>
+          </ul>
+          <div class="flex flex-col items-center gap-6 md:flex-row lg:gap-10">
+            <button class="hover:text-orange-400">Login</button>
+            <button class="bg-orange-400 hover:bg-orange-200 rounded-lg px-2 py-1">SignUp</button>
+          </div>
+        </div>
+        <div class="toggle-button md:hidden cursor-pointer">
+          <i class = "fa-solid fa-bars fa-lg bar-nav"></i>
+        </div>
+      </nav>
+    </div>
+       <!-- navbar ends -->
+       <!-- body starts -->
+       
+        <!-- Body ends -->
+      <!-- footer starts here -->
+      <footer class="bg-gray-900 text-white py-8 ">
+        <div class="container mx-auto lg:px-[70px]">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center md:text-left">
+              <p class="text-lg font-semibold">Design Factory Group</p>
+              <p class="text-sm">Ambikanagar road, Nayapara, Siliguri, West Bengal 735135</p>
+            </div>
+            <div class="mt-4 md:mt-0">
+              <ul class="flex justify-center md:justify-end space-x-4">
+                <li>
+                  <a href="#" class="text-sm hover:text-gray-400 transition duration-300">Home</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm hover:text-gray-400 transition duration-300">About</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm hover:text-gray-400 transition duration-300">Services</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm hover:text-gray-400 transition duration-300">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex items-center justify-center md:justify-end mt-8">
+            <div class="flex space-x-4">
+              <a href="#" class="text-white hover:text-gray-400 transition duration-300">
+                <i class="fa-brands fa-instagram w-6 h-6"></i>
+              </a>
+              <a href="#" class="text-white hover:text-gray-400 transition duration-300">
+                <i class="fa-brands fa-facebook w-6 h-6"></i>
+              </a>
+              <a href="#" class="text-white hover:text-gray-400 transition duration-300">
+                <i class="fa-brands fa-twitter w-6 h-6"></i>
+              </a>
+            </div>
+          </div>
+          <div class="border-t border-gray-800 mt-8 pt-4 text-center">
+            <p class="text-sm">©2024 Design Factory Group. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer ends here -->
+       <!-- Residential and commercial section ends -->
+       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+       <script src="script.js"></script>
+       <script>
+        const toggleBtn = document.querySelector(".toggle-button");
+        const dropdown = document.querySelector(".dropdown-menu");
+
+        toggleBtn.addEventListener("click", () => {
+       // Toggle the 'top-16' class on the dropdown menu
+        console.log("Toggle button clicked");
+        dropdown.classList.toggle('top-16');
+        });
+
+       </script>
+</body>
+</html>
